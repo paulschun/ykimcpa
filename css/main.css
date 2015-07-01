@@ -1,6 +1,6 @@
 /* header*/
 
-img.profile{
+img.logo{
 	margin: 1% 0 0.2% 2%;
 }
 
@@ -84,6 +84,28 @@ p.dev{
 	font-size: 14px;
 }
 
+h1.about{
+	font-family: 'Helvetica Neue';
+	font-size: 28px;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 20px;
+	text-align: center;
+	margin-top: 5%;
+}
+
+img.profile{
+	margin: 2% 0 0 10%;
+}
+ p.about{
+ 	font-family: 'Helvetica Neue';
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 20px;
+	text-align: left;
+	margin: 0 6% 0 15%;
+ }
 
 
 
