@@ -1,0 +1,110 @@
+@import 'bootstrap';
+
+/* header*/
+
+img.logo{
+	margin: 1% 0 0.2% 2%;
+}
+
+a.consultation{
+	float: right;
+	margin: 1% 2% 0.2% 0;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 14px;
+	color:blue;
+}
+
+hr.head{
+	height: 1px;
+	width: 100%;
+}
+
+/*body*/
+div.body{
+	margin: 7% 25% 0 25%;
+	text-align: center;
+}
+
+p.text{
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 22px;
+}
+
+button.btn{
+	margin-top: 2%;
+	color:black;
+}
+
+div.body2{
+	margin: 7% 20% 0 20%;
+}
+
+h1.unravel{
+	font-family: 'Helvetica Neue';
+	font-size: 28px;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 24px;
+	text-align: center;
+}
+
+p.info{
+	font-family: 'Helvetica Neue';
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 20px;
+	text-align: left;
+}
+div.speech{
+	margin: 3% 12% 0 9%;
+}
+div.speech2{
+	margin: 3% 5% 0 5%;
+}
+hr.pages{
+	height: 1px;
+	width: 100%;
+	margin-top: 5%;
+}
+
+img.dev{
+	border: 2px;
+}
+img.dev2{
+	border: 2px;
+	float: right;
+}
+
+p.dev2{
+	font-family: 'Helvetica Neue';
+	font-size: 14px;
+	text-align: right;
+}
+p.dev{
+	font-family: 'Helvetica Neue';
+	font-size: 14px;
+}
+
+h1.about{
+	font-family: 'Helvetica Neue';
+	font-size: 28px;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 20px;
+	text-align: center;
+	margin-top: 5%;
+}
+
+img.profile{
+	margin: 2% 0 0 10%;
+}
+ p.about{
+ 	font-family: 'Helvetica Neue';
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 20px;
+	text-align: left;
+	margin: 0 6% 0 15%;
+ }
