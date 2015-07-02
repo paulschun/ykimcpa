@@ -47,4 +47,4 @@ gulp.task('icons', function() {
     .pipe(gulp.dest('./build/fonts'));
 });
 
-gulp.task('default', ['connect', 'watch']);
+gulp.task('default', ['html', 'sass', 'connect', 'watch']);
