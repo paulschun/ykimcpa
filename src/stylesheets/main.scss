@@ -1,10 +1,9 @@
 @import 'custom_bootstrap';
-
-
 /* header*/
 
 img.logo{
 	margin: 1% 0 0.2% 2%;
+	float: left;
 }
 
 a.consultation{
@@ -15,58 +14,101 @@ a.consultation{
 	color:blue;
 }
 
-hr.head{
-	height: 1px;
-	width: 100%;
+p.intro{
+	font-family: Adamina;
+	font-varient: light;
+	font-size: 24px;
+	float: left;
+	line-height: 22px;
+	margin: 1% 0 0 1%;
+}
+.intro-button{
+	float:right;
+	margin: 0 2% 2% 0;
+}
+button.btn1{
+	margin-top: 2%;
+	color:white;
+	font-family: 'Open Sans';
+	font-size: 24px;
+	padding: 10px 25px 10px 25px;
+	background-color: #5CE165;
+	border: 1px solid transparent;
+	border-radius: 7px;
 }
 
 /*body*/
+
+div.main{
+	background-image: url("#");
+}
+
 div.body{
-	margin: 7% 25% 0 25%;
+	margin: 10% 17% 10% 17%;
 	text-align: center;
+
 }
 
 p.text{
-	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-	font-size: 22px;
+	font-family: 'Francois One';
+	font-size: 55px;
 }
 
 button.btn{
 	margin-top: 2%;
-	color:black;
+	color:white;
+	font-family: 'Open Sans';
+	font-size: 24px;
+	padding: 10px 50px 10px 50px;
+	background-color: #5CE165;
+	border-radius: 8px;
+}
+button.body{
+	margin: 15% 0 5% 0;
 }
 
 div.body2{
-	margin: 7% 20% 0 20%;
+	margin: 4% 5% 0 5%;
+}
+
+div.why{
+	background-color: #04AEFF;
+	width: 100%;
+	height: 100%;
+	border-style: solid;
+	border-width: 1px;
 }
 
 h1.unravel{
 	font-family: 'Helvetica Neue';
-	font-size: 28px;
+	font-size: 55px;
 	font-style: normal;
 	font-variant: normal;
+	font-weight: bold;
+	letter-spacing: 1.5px;
 	line-height: 24px;
 	text-align: center;
+	color: white;
+	margin-bottom: 5%;
 }
 
 p.info{
-	font-family: 'Helvetica Neue';
-	font-size: 18px;
+	font-family: 'Arial Narrow', Arial, sans-serif;
+	color: white;
+	font-size: 30px;
 	font-style: normal;
 	font-variant: normal;
-	line-height: 20px;
+	font-weight: lighter;
+	letter-spacing: 2px;
 	text-align: left;
+	line-height: 40px;
+	margin: 1% 9% 20% 9%;
 }
 div.speech{
 	margin: 3% 12% 0 9%;
 }
 div.speech2{
 	margin: 3% 5% 0 5%;
-}
-hr.pages{
-	height: 1px;
-	width: 100%;
-	margin-top: 5%;
 }
 
 img.dev{
