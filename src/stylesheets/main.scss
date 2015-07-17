@@ -1,9 +1,15 @@
 @import 'custom_bootstrap';
 /* header*/
 
+header{	
+	background-color:white;
+	position:fixed;
+	width:100%;
+}
 img.logo{
 	margin: 1% 0 0.2% 2%;
 	float: left;
+	width: 30%;
 }
 
 a.consultation{
@@ -38,21 +44,23 @@ button.btn1{
 }
 
 /*body*/
-
-div.main{
-	background-image: url("#");
+.containter{
+	padding-top:7%;
+	background-image: url("/img/skyline.jpg");
+	background-repeat: no-repeat;
+	background-size:100%;
+	height:100vh;
 }
 
 div.body{
-	margin: 10% 10% 10% 10%;
+	margin: 2% 10% 10% 10%;
 	text-align: center;
-
 }
 
 p.text{
 	font-family: 'Open Sans';
 	font-size: 50px;
-	font-weight: bold;
+	font-weight: 900;
 }
 
 button.btn{
@@ -64,18 +72,15 @@ button.btn{
 	background-color: #44A044;
 	border-radius: 8px;
 }
-button.body{
-	margin: 15% 0 5% 0;
-}
 
 div.body2{
-	margin: 4% 5% 0 5%;
+	margin: 1% 5% 0 5%;
 }
 
 div.why{
 	background-color: #487CBE;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	border-style: solid;
 	border-width: 1px;
 }
@@ -85,7 +90,7 @@ h1.unravel{
 	font-size: 55px;
 	font-style: normal;
 	font-variant: normal;
-	font-weight: bold;
+	font-weight: 900;
 	letter-spacing: 1.5px;
 	line-height: 24px;
 	text-align: center;
@@ -103,7 +108,7 @@ p.info{
 	letter-spacing: 2px;
 	text-align: left;
 	line-height: 40px;
-	margin: 1% 9% 20% 9%;
+	margin: 1% 9% 0 9%;
 }
 div.speech{
 	margin: 3% 12% 0 9%;
@@ -114,10 +119,7 @@ div.speech2{
 
 img.dev{
 	border: 2px;
-}
-img.dev2{
-	border: 2px;
-	float: right;
+	width:50%;
 }
 
 p.dev2{
