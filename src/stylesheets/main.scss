@@ -2,16 +2,16 @@
 /* header*/
 
 header{	
-  background-color:white;
   position:fixed;
   width:100%;
   z-index: 1;
-  opacity: 0.8;
+  background: rgba(255, 255, 255, 0.4)
 }
 img.logo{
-  margin: 1% 0 0.2% 2%;
-  float: left;
-  width: 30%;
+	margin: 10px 0 0.2% 2%;
+	float: left;
+	width: 350px;
+  opacity: 1;
 }
 
 p.intro{
@@ -26,16 +26,17 @@ p.intro{
   margin: -0.2% 1.7% 0 0;
 }
 button.btn1{
-  margin-top: 5%;
-  margin-bottom:2%;
-  color:white;
-  font-family: 'Open Sans';
-  font-size: 18px;
-  padding: 8px 25px 8px 25px;
-  background-color: #44A044;
-  border: 1px solid transparent;
-  border-radius: 10px;
-  font-weight:light;
+	margin-top: 15px;
+	margin-bottom:2%;
+	color:white;
+	font-family: 'Open Sans';
+	font-size: 18px;
+	padding: 8px 25px 8px 25px;
+	background-color: #44A044;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	font-weight:light;
+  opacity: 1;
 }
 
 /*body*/
