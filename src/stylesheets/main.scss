@@ -65,7 +65,7 @@ a.button{
 }
 
 div.body{
-  margin: 0 10% 45vh 10%;
+  margin: 0 10% 0 10%;
   text-align: center;
 }
 
@@ -84,7 +84,12 @@ button.btn{
   padding: 10px 50px 10px 50px;
   background-color: #44A044;
   border-radius: 8px;
-  z-index: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
 }
 
 div.body2{
