@@ -1,12 +1,21 @@
 @import 'custom_bootstrap';
 /* header*/
 
-header{	
+header {
   position:fixed;
   width:100%;
   z-index: 1;
-  background: rgba(255, 255, 255, 0.4)
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 7px #555;
+  transition: background-color 0.75s;
+
+  &.below-zero {
+    background: rgba(255, 255, 255, 1);
+  }
 }
+
+
+
 img.logo{
 	margin: 10px 0 0.2% 2%;
 	float: left;
@@ -54,14 +63,16 @@ a.button{
 }
 
 div.body{
-  margin: 2% 10% 45vh 10%;
+  margin: 0 10% 45vh 10%;
   text-align: center;
 }
 
 p.text{
+  color: #FFF;
   font-family: 'Open Sans';
-  font-size: 50px;
+  font-size: 3.75em;
   font-weight: 900;
+  text-shadow: 0 0 7px gray;
 }
 
 button.btn{
