@@ -1,39 +1,41 @@
 @import 'custom_bootstrap';
+
+$marginSize: 1em;
+
 /* header*/
 
 header {
   position:fixed;
   width:100%;
   z-index: 1;
-  background: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 0 7px #555;
-  transition: background-color 0.75s;
+  transition: all 0.75s;
 
   &.below-zero {
-    background: rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 7px #555;
   }
 }
 
-
-
 img.logo{
-	margin: 10px 0 0.2% 2%;
+	margin: $marginSize 0 $marginSize/2 $marginSize;
 	float: left;
-	width: 350px;
+	width: 300px;
   opacity: 1;
 }
 
-p.intro{
+p.intro {
   font-family: 'Open Sans';
   font-size: 30px;
   float: left;
   line-height: 28px;
   margin: 1% 0 0 1%;
 }
+
 .intro-button{
   float:right;
-  margin: -0.2% 1.7% 0 0;
+  margin: 0 $marginSize 0 0;
 }
+
 button.btn1{
 	margin-top: 15px;
 	margin-bottom:2%;
