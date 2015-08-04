@@ -52,7 +52,14 @@ button.btn1{
 
 /*body*/
 a.button{
-  vertical-align: bottom;
+  display: flex;
+  min-height: 90vh;
+  align-items: center;
+  justify-content: center; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  align-content: flex-end;
 }
 
 .containter{
@@ -77,6 +84,10 @@ p.text{
   text-shadow: 0 0 7px gray;
 }
 
+.Aligner-item--bottom {
+  align-self: flex-end;
+}
+
 button.btn{
   color:white;
   font-family: 'Open Sans';
@@ -84,12 +95,6 @@ button.btn{
   padding: 10px 50px 10px 50px;
   background-color: #44A044;
   border-radius: 8px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: flex-end;
 }
 
 div.body2{
@@ -150,9 +155,19 @@ p.dev{
 }
 
 @media screen and (max-width: 900px) {
+  a.button{
+  display: flex;
+  min-height: 90vh;
+  align-items: center;
+  justify-content: center; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  align-content: flex-end;
+}
 
   div.body{
-    margin: 2% 10% 30vh 10%;
+    margin: 2% 10% 0 10%;
     text-align: center;
   }
   button.btn1{
@@ -168,7 +183,6 @@ p.dev{
   }
 
   button.btn{
-    margin-top: 15%;
     color:white;
     font-family: 'Open Sans';
     font-size: 24px;
@@ -219,8 +233,19 @@ p.dev{
 }
 
 @media screen and (max-width: 700px) {
+  a.button{
+  display: flex;
+  min-height: 90vh;
+  align-items: center;
+  justify-content: center; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  align-content: flex-end;
+}
+
   div.body{
-    margin: 0 10% 46vh 10%;
+    margin: 0 10% 0 10%;
     text-align: center;
   }
   button.btn1{
@@ -236,7 +261,6 @@ p.dev{
   }
 
   button.btn{
-    margin-top: 15%;
     color:white;
     font-family: 'Open Sans';
     font-size: 20px;
@@ -284,13 +308,26 @@ p.dev{
 }
 
 @media screen and (max-width: 450px) {
+  a.button{
+  display: flex;
+  min-height: 50vh;
+  align-items: center;
+  justify-content: center; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  align-content: flex-end;
+}
+img.logo {
+    width: 155px;
+}
   .intro-button{
     float:right;
-    margin: -0.2% 5% 0 0;
+    margin: 2.6% 4.5% 0 0;
   }
 
   div.body{
-    margin: 5% 10% 40vh 10%;
+    margin: 5% 10% 0 10%;
     text-align: center;
   }
   button.btn1{
@@ -307,7 +344,6 @@ p.dev{
   }
 
   button.btn{
-    margin-top: 15%;
     color:white;
     font-family: 'Open Sans';
     font-size: 16px;
