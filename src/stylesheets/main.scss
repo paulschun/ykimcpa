@@ -50,42 +50,42 @@ button.btn1{
   opacity: 1;
 }
 
-/*body*/
-a.button{
+/* body */
+
+a.button {
   display: flex;
-  min-height: 90vh;
-  align-items: center;
-  justify-content: center; 
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex-flow: row wrap;
-  align-content: flex-end;
+  text-decoration: none;
+
+  button {
+    margin-bottom: 3em;
+    text-transform: uppercase;
+  }
 }
 
-.containter{
-  padding-top:7%;
+.splash {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-top: 5em;
   background-image: url("/img/skyline.jpg");
   background-repeat: no-repeat;
   background-size:cover;
-  height:100vh;
+  height: 100vh;
+  min-height: 300px;
   width: 100%;
-}
-
-div.body{
-  margin: 0 10% 0 10%;
   text-align: center;
 }
 
-p.text{
+h3 {
+  display: flex;
   color: #FFF;
   font-family: 'Open Sans';
   font-size: 3.75em;
   font-weight: 900;
   text-shadow: 0 0 7px gray;
-}
-
-.Aligner-item--bottom {
-  align-self: flex-end;
+  line-height: 1.5em;
+  letter-spacing: 0.3px;
 }
 
 button.btn{
@@ -155,21 +155,11 @@ p.dev{
 }
 
 @media screen and (max-width: 900px) {
-  a.button{
-  display: flex;
-  min-height: 90vh;
-  align-items: center;
-  justify-content: center; 
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex-flow: row wrap;
-  align-content: flex-end;
-}
 
   div.body{
-    margin: 2% 10% 0 10%;
     text-align: center;
   }
+
   button.btn1{
     margin-top: 3%;
     color:white;
@@ -190,15 +180,8 @@ p.dev{
     background-color: #44A044;
     border-radius: 8px;
   }
-  .containter{
-    padding-top:7%;
-    background-image: url("/img/skyline.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
-    height:100vh;
-  }
 
-  p.text{
+  h3{
     font-family: 'Open Sans';
     font-size: 45px;
     font-weight: 900;
@@ -233,16 +216,6 @@ p.dev{
 }
 
 @media screen and (max-width: 700px) {
-  a.button{
-  display: flex;
-  min-height: 90vh;
-  align-items: center;
-  justify-content: center; 
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex-flow: row wrap;
-  align-content: flex-end;
-}
 
   div.body{
     margin: 0 10% 0 10%;
@@ -268,15 +241,8 @@ p.dev{
     background-color: #44A044;
     border-radius: 8px;
   }
-  .containter{
-    padding-top:7%;
-    background-image: url("/img/skyline.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
-    height:100vh;
-  }
 
-  p.text{
+  h3{
     font-family: 'Open Sans';
     font-size: 32px;
     font-weight: 900;
@@ -308,16 +274,6 @@ p.dev{
 }
 
 @media screen and (max-width: 450px) {
-  a.button{
-  display: flex;
-  min-height: 50vh;
-  align-items: center;
-  justify-content: center; 
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex-flow: row wrap;
-  align-content: flex-end;
-}
 img.logo {
     width: 155px;
 }
@@ -351,18 +307,9 @@ img.logo {
     background-color: #44A044;
     border-radius: 8px;
   }
-  .containter{
-    padding-top:7%;
-    background-image: url("/img/skyline.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
-    height:100vh;
-  }
 
-  p.text{
-    font-family: 'Open Sans';
+  h3 {
     font-size: 35px;
-    font-weight: 900;
   }
 
   h1.unravel{
