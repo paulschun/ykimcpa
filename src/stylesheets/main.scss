@@ -57,15 +57,28 @@ a.button {
   text-decoration: none;
 
   button {
-    margin-bottom: 3em;
+    margin-top: 0.5em;
+    padding: 0.5em 1em;
+    background-color: transparent;
     text-transform: uppercase;
+    border: 2px solid black;
+    color: black;
+    font-size: 1.25em;
+    font-weight: 800;
+    letter-spacing: 0px;
+
+    &:hover {
+      border-color: #44A044;
+      background-color: #44A044;
+      color: white;
+    }
   }
 }
 
 .splash {
   align-items: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-direction: column;
   background-image: url("/img/skyline-faded.jpg");
   background-repeat: no-repeat;
@@ -86,15 +99,6 @@ h3 {
   line-height: 1.75em;
   font-weight: 900;
   letter-spacing: 0.3px;
-}
-
-button.btn{
-  color:white;
-  font-family: 'Open Sans';
-  font-size: 24px;
-  padding: 10px 50px 10px 50px;
-  background-color: #44A044;
-  border-radius: 8px;
 }
 
 div.body2{
