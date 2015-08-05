@@ -46,6 +46,7 @@ gulp.task('watch', function () {
   gulp.watch(['./src/stylesheets/*.scss'], ['sass']);
   gulp.watch(['./src/javascripts/*.js'], ['js']);
   gulp.watch(['./src/*.html'], ['html']);
+  gulp.watch(['./src/img/*.*'], ['images']);
 });
 
 gulp.task('icons', function() {
