@@ -3,14 +3,24 @@ var gulp = require('gulp'),
     livereload = require('gulp-livereload'),
     sass = require('gulp-ruby-sass');
 
+const paths = {
+  scripts: [
+    './src/javascripts/*.js',
+    './bower_components/bootstrap-sass-official/assets/javascripts/*.js',
+    './bower_components/gsap/src/minified/*.js'
+  ],
+  stylesheets: [
+    './src/stylesheets',
+    './bower_components/bootstrap-sass-official/assets/stylesheets',
+    './bower_components/fontawesome/scss'
+  ]
+};
+
 gulp.task('sass', function() {
   return sass('src/stylesheets/', {
     style: 'compressed',
-    loadPath: [
-      './src/stylesheets',
-      './bower_components/bootstrap-sass-official/assets/stylesheets',
-      './bower_components/fontawesome/scss'
-    ]})
+    loadPath: paths.stylesheets
+  })
     .pipe(gulp.dest('build/css'))
     .pipe(livereload());
 });
@@ -24,7 +34,7 @@ gulp.task('connect', function() {
 });
 
 gulp.task('js', function () {
-  gulp.src('./src/javascripts/*.js')
+	gulp.src(paths.scripts)
     .pipe(gulp.dest('./build/js'))
     .pipe(livereload());
 });

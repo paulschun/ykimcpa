@@ -17,6 +17,9 @@
     "bootstrap-sass-official": "~3.3.5",
     "greensock": "~1.17.0"
   },
+  "devDependencies": {
+    "gsap": "~1.17.0"
+  },
   "moduleType": [
     "node"
   ],
