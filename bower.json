@@ -19,5 +19,8 @@
   },
   "moduleType": [
     "node"
-  ]
+  ],
+  "devDependencies": {
+    "gsap": "~1.17.0"
+  }
 }
