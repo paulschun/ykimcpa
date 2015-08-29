@@ -81,6 +81,7 @@ a.button {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  align-items: center;
   background-image: url("/img/skyline-faded.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -125,13 +126,8 @@ h1.unravel{
   text-align: center;
   color: white;
   margin-bottom: 5%;
-  transform: translate3d(0 0 400px) rotateY(-400deg);
 }
 
-/*h1.unravel.hidden{
-  opacity: 1;
-  transform: translate3d(0 0 400px) rotateY(-400deg);
-}*/
 
 p.info{
   font-family: 'Open Sans';
