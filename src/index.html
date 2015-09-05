@@ -19,6 +19,17 @@
     <!-- for animation -->
     <link rel="stylesheet" href="/css/animate.css">
 
+    <script type="text/javascript">
+      $(function() {
+          $("#btn-show-modal").click(function(e){
+            e.preventDefault();
+
+            $("#consultation").modal('show');
+          });
+
+      });
+      </script>
+
   </head>
   <body>
     <!--[if lt IE 8]>
@@ -32,7 +43,7 @@
         </a>
       </div>
       <div class="intro-button">
-        <a href="#"><button type="button" class="btn1">REQUEST A FREE CONSULTATION</button></a>
+        <a href="#consultation" data-toggle="modal"><button type="button" class="btn1">REQUEST A FREE CONSULTATION</button></a>
       </div>
     </header>
     <div class="splash">
@@ -42,7 +53,7 @@
 	  For Businesses and Individuals.
 	</h3>
 </div>
-        <a href="#" class="button animated fadeInDown">
+        <a href="#consultation" data-toggle="modal" class="button animated fadeInDown" >
 	  <button type="button" class="btn">
 	    Request a Free Consultation
 	  </button>
@@ -66,6 +77,29 @@
         <p class="dev"><img src="/img/lady.png" class="dev">
       </div>
     </div>
+
+<!--Modal section-->
+    <div class="modal fade" id="consultation" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1>Consultation Request Form</h1>
+          </div>
+          <div class="modal-body">
+            <p>this is a place holder</p><br>
+            <p>this is a place holder</p><br>
+            <p>this is a place holder</p><br>
+            <p>this is a place holder</p><br>
+            <p>this is a place holder</p><br>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-default" data-dismiss="modal">Close</a>
+            <a class="btn btn-primary" data-dismiss="modal">Send</a>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--End of Modal -->
 
     <br>
 
