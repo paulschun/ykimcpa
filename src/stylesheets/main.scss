@@ -222,6 +222,22 @@ p.dev{
 
 }
 
+/*iframe*/
+form{
+  font-family: 'Open Sans';
+  height: 100vh;
+}
+input.input{
+  width: 650px;
+  height:500px;
+}
+input.tel{
+  height: 500px;
+}
+
+
+/*media queries */
+
 @media screen and (max-width: 700px) {
 
   div.body{
