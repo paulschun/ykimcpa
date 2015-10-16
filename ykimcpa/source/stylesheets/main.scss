@@ -1,4 +1,4 @@
-@import 'custom_bootstrap';
+//@import 'custom_bootstrap';
 
 $marginSize: 1em;
 
@@ -82,7 +82,7 @@ a.button {
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-  background-image: url("/img/skyline-faded.jpg");
+  background-image: image_url("skyline-faded.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 15%;
@@ -357,4 +357,5 @@ img.logo {
     line-height: 32px;
     margin: 5vh 9% 0 9%;
   }
+
 }
