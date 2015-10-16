@@ -4,6 +4,9 @@ source 'https://rubygems.org'
 
 gem "middleman", "~>3.3.12"
 
+# For deploying to GitHub Pages
+gem "middleman-gh-pages", "~>0.0.3"
+
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
 
