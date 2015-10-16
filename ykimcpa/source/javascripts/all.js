@@ -1,4 +1,4 @@
-//= require_tree .
+//= require bootstrap.min
 
 document.addEventListener("scroll", function(event) {
   var _header = document.querySelector("header");
