@@ -28,8 +28,8 @@ title: Welcome to Middleman
 
 
 <div class="why">
-  <div class="body2 animated fadeInLeft hidden">
-    <h1 class="unravel">Literally San Francisco's Happiest Clients.</h1>
+  <div class="body2 animated fadeInLeft">
+    <h2>Literally San Francisco's Happiest Clients.</h2>
     <p class="info">
       With _____% of clients returning the next year and ____% of clients referred via word-of-mouth, Young Kim Accounting Solutions has an established reputation for providing high-quality, knowledgable and highly-individualized consulting and accounting services to both individuals and businesses.
     </p>
@@ -41,18 +41,19 @@ title: Welcome to Middleman
 </div>
 
 <div class="container">
-  <h2>Your One Solution For International Tax Needs</h2>
-  <p>
+  <h2>All International Tax Needs. One Place.</h2>
+  <p class="info">
     Young Kim Accounting Solutions can help you or your business with:
+    <ul>
+      <li>International Taxation Services</li>
+      <li>International Accounting Services</li>
+      <li>Personal Tax Return Preparation</li>
+      <li>Business Tax Return Preparation</li>
+    </ul>
   </p>
-  <ul>
-    <li>International Taxation Services</li>
-    <li>International Accounting Services</li>
-    <li>Personal Tax Return Preparation</li>
-    <li>Business Tax Return Preparation</li>
-  </ul>
   <div class="col-sm-4 speech">
     "My business's relationship with Young Kim Accounting Solutions began in 1997 and we've never looked back." - Someone with impressive business
+
     <p class="dev"></p>
   </div>
 </div>
@@ -78,29 +79,29 @@ title: Welcome to Middleman
 <br>
 
 <!-- scripts-->
-  <%= javascript_include_tag 'all' %>
+<%= javascript_include_tag 'all' %>
 
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-  <script>
-    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-    e.src='//www.google-analytics.com/analytics.js';
-    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-    ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-  </script>
-  <script type="text/javascript">
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+  e.src='//www.google-analytics.com/analytics.js';
+  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+  ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+</script>
+<script type="text/javascript">
 
-    (function(){
+  (function(){
 
-    var body2El = jQuery('div.body2'),
-    body2ElOffset = body2El.offset().top/2,
-    documentEl = jQuery(document);
+  var body2El = jQuery('div.body2'),
+  body2ElOffset = body2El.offset().top/2,
+  documentEl = jQuery(document);
 
-    documentEl.on('scroll', function() {
-    if( documentEl.scrollTop() > body2ElOffset && body2El.hasClass('hidden') ) body2El.removeClass('hidden');
-    }); 
+  documentEl.on('scroll', function() {
+  if( documentEl.scrollTop() > body2ElOffset && body2El.hasClass('hidden') ) body2El.removeClass('hidden');
+  });
 
-    })();
+  })();
 
 </script>
