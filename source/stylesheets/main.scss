@@ -1,0 +1,375 @@
+@import 'custom_bootstrap';
+
+$marginSize: 1em;
+
+body {
+    font-family: 'Open Sans';
+}
+
+/* header*/
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  transition: all 0.75s;
+  top: 0;
+
+  &.below-zero {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 7px #555;
+  }
+}
+
+img.logo{
+	margin: $marginSize 0 $marginSize/2 $marginSize;
+	float: left;
+	width: 300px;
+  opacity: 1;
+}
+
+p.intro {
+  font-family: 'Open Sans';
+  font-size: 30px;
+  float: left;
+  line-height: 28px;
+  margin: 1% 0 0 1%;
+}
+
+.intro-button{
+  float:right;
+  margin: 0 $marginSize 0 0;
+}
+
+button.btn1{
+	margin-top: 15px;
+	margin-bottom:2%;
+	color:white;
+	font-family: 'Open Sans';
+	font-size: 18px;
+	padding: 8px 25px 8px 25px;
+	background-color: #44A044;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	font-weight:light;
+  opacity: 1;
+}
+
+
+/* body */
+
+a.button {
+  display: flex;
+  text-decoration: none;
+
+  button {
+    margin-top: 0.5em;
+    padding: 0.5em 1em;
+    background-color: transparent;
+    text-transform: uppercase;
+    border: 2px solid black;
+    color: black;
+    font-size: 1.25em;
+    font-weight: 800;
+    letter-spacing: 0px;
+
+    &:hover {
+      border-color: #44A044;
+      background-color: #44A044;
+      color: white;
+    }
+  }
+}
+
+.splash {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  background-image: image_url("skyline-faded.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 15%;
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 3.5em;
+  display: flex;
+  color: black;
+  font-family: 'Open Sans';
+  font-size: 2.5em;
+  line-height: 1.75em;
+  font-weight: 900;
+  letter-spacing: 0.3px;
+}
+
+div.body2 {
+  margin: 10% 0 0 0;
+}
+
+div.why {
+  background-color: #0F294A;
+  width: 100%;
+  min-height: 100vh;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.why h2, .why .info {
+  color: white;
+}
+
+h2 {
+  margin-top: 1em;
+  color: black;
+  font-size: 53px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+
+p.info {
+  font-size: 24px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-align: left;
+  line-height: 40px;
+  margin: 1% 9% 0 9%;
+}
+
+.speech{
+  margin: 3% 12% 0 9%;
+  font-style: italic;
+  line-height: 1.75em;
+  .dev {
+    text-align: right;
+  }
+}
+
+img.dev{
+  border: 2px;
+  width:50%;
+}
+p.dev{
+  font-family: 'Open Sans';
+  font-size: 14px;
+}
+
+/*iframe*/
+iframe{
+  font-family: 'Open Sans';
+  font-size: 200px;
+
+}
+
+/* media queries*/
+@media screen and (max-width: 1100px) {
+  h1.unravel{
+    font-family: 'Open Sans';
+    font-size: 55px;
+    line-height: 55px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  div.body{
+    text-align: center;
+  }
+
+  button.btn1{
+    margin-top: 3%;
+    color:white;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    padding:4px 10px 4px 10px,;
+    background-color: #44A044;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-weight:100;
+  }
+
+  button.btn{
+    color:white;
+    font-family: 'Open Sans';
+    font-size: 24px;
+    padding:4px 10px 4px 10px;
+    background-color: #44A044;
+    border-radius: 8px;
+  }
+
+  h3{
+    font-family: 'Open Sans';
+    font-size: 45px;
+    font-weight: 900;
+  }
+
+  h1.unravel{
+    font-family: 'Open Sans';
+    font-size: 43px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 900;
+    line-height: 42px;
+    text-align: center;
+    color: white;
+  }
+
+  p.info{
+    font-family: 'Open Sans';
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-align: left;
+    line-height: 32px;
+    margin: 8vh 9% 0 9%;
+  }
+  img.dev{
+    border: 2px;
+    width:40%;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+
+  div.body{
+    margin: 0 10% 0 10%;
+    text-align: center;
+  }
+  button.btn1{
+    margin-top: 3%;
+    color:white;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    padding:0 5px 0 5px;
+    background-color: #44A044;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-weight:100;
+  }
+
+  button.btn{
+    color:white;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    padding: 2px 8px 2px 8px;
+    background-color: #44A044;
+    border-radius: 8px;
+  }
+
+  h3{
+    font-family: 'Open Sans';
+    font-size: 32px;
+    font-weight: 900;
+  }
+
+  h1.unravel{
+    font-family: 'Open Sans';
+    font-size: 37px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 900;
+    line-height: 32px;
+    text-align: center;
+    color: white;
+    margin-bottom: 5%;
+  }
+
+  p.info{
+    font-family: 'Open Sans';
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-align: left;
+    line-height: 32px;
+    margin: 0 9% 10vh 9%;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+img.logo {
+    width: 150px;
+}
+  .intro-button{
+    float:right;
+    margin: 2.6% 4.5% 0 0;
+  }
+
+  div.body{
+    margin: 5% 10% 0 10%;
+    text-align: center;
+  }
+  button.btn1{
+    margin-top: 2%;
+    margin-bottom:2%;
+    color:white;
+    font-family: 'Open Sans';
+    font-size: 11px;
+    padding:0;
+    background-color: #44A044;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-weight:100;
+  }
+
+  button.btn{
+    color:white;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    padding:0;
+    background-color: #44A044;
+    border-radius: 8px;
+  }
+
+  h3 {
+    font-size: 35px;
+  }
+
+  h1.unravel{
+    font-family: 'Open Sans';
+    font-size: 35px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 900;
+    line-height: 32px;
+    text-align: center;
+    color: white;
+    margin-bottom: 5%;
+  }
+
+  p.info{
+    font-family: 'Open Sans';
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-align: left;
+    line-height: 32px;
+    margin: 5vh 9% 0 9%;
+  }
+
+}
+
+ul.services {
+  margin-top: 1em;
+  font-size: 1.5em;
+  font-weight: 700;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  li {
+    margin: 1em 0;
+  }
+}
