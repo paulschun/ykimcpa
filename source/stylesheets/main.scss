@@ -9,10 +9,11 @@ body {
 /* header*/
 
 header {
-  position:fixed;
-  width:100%;
+  position: fixed;
+  width: 100%;
   z-index: 1;
   transition: all 0.75s;
+  top: 0;
 
   &.below-zero {
     background: rgba(255, 255, 255, 0.95);
@@ -90,8 +91,7 @@ a.button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 15%;
-  height: 100vh;
-  min-height: 300px;
+  min-height: 100vh;
   width: 100%;
   text-align: center;
 }
@@ -107,14 +107,14 @@ h3 {
   letter-spacing: 0.3px;
 }
 
-div.body2{
-  margin: 10% 5% 0 5%;
+div.body2 {
+  margin: 10% 0 0 0;
 }
 
 div.why {
   background-color: #0F294A;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   border-style: solid;
   border-width: 1px;
 }
@@ -124,6 +124,7 @@ div.why {
 }
 
 h2 {
+  margin-top: 1em;
   color: black;
   font-size: 53px;
   font-style: normal;
@@ -144,8 +145,13 @@ p.info {
   margin: 1% 9% 0 9%;
 }
 
-div.speech{
+.speech{
   margin: 3% 12% 0 9%;
+  font-style: italic;
+  line-height: 1.75em;
+  .dev {
+    text-align: right;
+  }
 }
 
 img.dev{
@@ -354,4 +360,16 @@ img.logo {
     margin: 5vh 9% 0 9%;
   }
 
+}
+
+ul.services {
+  margin-top: 1em;
+  font-size: 1.5em;
+  font-weight: 700;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  li {
+    margin: 1em 0;
+  }
 }
